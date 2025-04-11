@@ -1,0 +1,21 @@
+1. formatei o csv, tirando as "{}", trocando ";" por ",".
+2. fiz um codigo em py para ler o csv e responder as questoes 
+3. fiz o codigo em main.c para ler o csv da forma que formatei e limitado para 1000 processos, falar quantos processos lidos
+e chamar as funcoes ordenarPorId() e ordenarPorDataAjuizamento(), dps falar quantos processos
+tem do id_classe: 12554, e dps contar quantos processos unicos.
+
+
+
+//* para rodar o programa va para o diretorio e excute o programa com ./processos *//
+
+extencao vs code id: ReprEng.csv, link: https://marketplace.visualstudio.com/items?itemName=ReprEng.csv
+
+
+
+//codigo para executar dentro do diretorio
+rm ./processo
+rm multi_assuntos.csv
+rm ordenado_id.csv
+rm ordenado_data.csv
+gcc -o processo main.c processo.c -Wall -Wextra
+./processo
